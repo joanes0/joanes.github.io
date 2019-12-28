@@ -1,6 +1,6 @@
 <?php
 
-//if(isset($_POST['send'])){
+if(isset($_POST['send'])){
 $name = $_POST['name'];
 $visitor_email = $_POST['email'];
 $message = $_POST ['message'];
@@ -19,8 +19,7 @@ mail($to,$email_subject,$email_body,$headers);
 
 header("location: index.html");
 
-
-
+}
 
 
 
